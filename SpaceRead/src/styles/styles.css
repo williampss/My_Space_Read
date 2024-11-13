@@ -1,0 +1,13 @@
+*{
+    background-color: aqua;
+    color: black;   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;         
+}
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
