@@ -1,5 +1,4 @@
 *{
-    background-color: aqua;
     color: black;   
     margin: 0;
     padding: 0;
@@ -7,7 +6,31 @@
 }
 
 .container-home {
+   background-image: url('../images/HomeImage.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-blend-mode: multiply;
+   background-origin: content-box;
+   height: 100vh;
+}
+
+.content{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.tittle-home{
+    font-size: 64px;
+    margin-top: 160px;
+}
+
+.button-start{
+    margin-top: 350px;
+}
+
+#start{
+    width: 150px;
+    height: 50px;
 }
