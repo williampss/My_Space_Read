@@ -5,8 +5,8 @@
     box-sizing: border-box;         
 }
 
-.container-home {
-   background-image: url('../images/HomeImage.png');
+.container-route {
+   background-image: url('../images/image\ 53.png');
    background-size: cover;
    background-repeat: no-repeat;
    background-blend-mode: multiply;
@@ -21,7 +21,7 @@
     flex-direction: column;
 }
 
-.tittle-home{
+.title-route{
     font-size: 64px;
     margin-top: 160px;
 }
