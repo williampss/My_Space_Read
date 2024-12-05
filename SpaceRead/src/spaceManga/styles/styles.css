@@ -1,36 +1,83 @@
-*{
+* {
     color: rgb(250, 250, 250);   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container-manga{
+/* Container principal da página com fundo */
+.container-manga {
     background-image: url('../images/backEspaceManga.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-origin: content-box;
-    height: 100vh;
+    height: 100vh; /* Altura total da janela */
 }
 
-.content-manga{
+
+.content-manga {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding-top: 33px;
+    height: 100%; /* Ocupa toda a altura da janela */
 }
 
-.manga-title{
+/* Título principal da seção */
+.manga-title {
     font-size: 32px;
 }
 
-.space-link-manga{
+/* Container da lista de mangas com rolagem horizontal */
+.space-link-manga {
     margin-top: 37px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 15px; /* Espaço entre os cards */
+    
+    max-width: 100%; /* Ocupa toda a largura disponível */
+    overflow-x: auto; /* Permite rolagem horizontal quando o conteúdo ultrapassar a largura */
+    padding-bottom: 10px; /* Adiciona espaço para a rolagem */
+    scroll-snap-type: x mandatory; /* (Opcional) Cria um efeito de "snapping" no scroll */
 }
 
-li{
+/* Estilo para os itens da lista */
+li {
     list-style: none;
+}
+
+/* Ajustes para o texto dentro do card */
+.li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os cards de manga */
+.img-manga {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 162px;
+    height: 208px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve no card */
+    background-color: #f4f4f4;
+}
+
+/* Imagem dentro do card, ajustando para preencher o espaço */
+.img-manga img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem cubra todo o espaço */
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
