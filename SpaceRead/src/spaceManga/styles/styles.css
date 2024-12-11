@@ -67,6 +67,9 @@ li {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve no card */
     background-color: #f4f4f4;
+
+    margin-left: 110px;
+    margin-right: 105px;
 }
 
 /* Imagem dentro do card, ajustando para preencher o espaço */
@@ -77,6 +80,8 @@ li {
 }
 
 .text{
+    display: grid;
+    grid-tamplate-columns: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
