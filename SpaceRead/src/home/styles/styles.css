@@ -87,5 +87,11 @@
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    font: bold;
     color:azure;
 }
+
+#start{
+    background: linear-gradient( to riight, #000000, #660000, #ff0000);
+}
+    
